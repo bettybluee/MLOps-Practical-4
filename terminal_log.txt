@@ -1,0 +1,16 @@
+ 1010  history > terminal_log.txt
+ 1011  ls
+ 1012  git init
+ 1013  git commit -m "Add termnal log"
+ 1014  pwd
+ 1015  ls
+ 1016  cd ..
+ 1017  ls
+ 1018  cd Desktop
+ 1019  ls
+ 1020  cd "Master DSS"
+ 1021  ls
+ 1022  cd "Reproducibility & Model Deployment"
+ 1023  ls
+ 1024  cd "MLOps-Practical-4"
+ 1025  terminal_log.txt
