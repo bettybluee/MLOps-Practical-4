@@ -1,0 +1,4 @@
+name: mlops-practical4
+dependencies:
+  - python=3.11
+  - numpy=1.26.0
