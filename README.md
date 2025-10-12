@@ -132,6 +132,6 @@ Next steps:
 ## 👩‍💻 Author
 
 **Betty Kim**
-📚 Tilburg University – MSc Data Science  
+📚 Tilburg University – MSc Data Science and Society  
 🗓️ Week 4: Environments & Docker  
 🔗 [GitHub Profile](https://github.com/bettybluee)
