@@ -13,8 +13,8 @@ The goal was to:
 * Create isolated environments using `venv` and `conda`
 * Export dependencies with `requirements.txt` and `environment.yml`
 * Build and run reproducible containers with `Dockerfile`
-* Understand how to version and share environments for collaborative projects
 * Document all executed commands and outputs in `terminal_log.txt`
+* Commit and push project files to GitHub
 
 🔗 **Main Repo:** [MLOps-Practical-4](https://github.com/bettybluee/MLOps-Practical-4)
 
@@ -46,11 +46,11 @@ docker run --rm mlops-week4
 * Docker image built successfully
 * Container runs Python script and exits cleanly
 
-  ```
-  Running experiment...
-  Numpy version: 1.26.0
-  Computation: 6
-  ```
+```
+Running experiment...
+Numpy version: 1.26.0
+Computation: 6
+```
 
 ---
 
@@ -60,19 +60,14 @@ docker run --rm mlops-week4
 MLOps-Practical-4/
 ├── src/
 │   ├── __init__.py         # Package initialization
-│   └── processor.py        # Simple processing script for testing
+│   └── train.py            # Simple training script
 ├── tests/
-│   ├── test_processor.py   # Tests for processor.py
-│   └── test_smoke.py       # Basic smoke tests
+│   └── test_train.py       # Tests for train.py
 ├── .gitignore              # Files/folders to ignore in Git
-├── LICENSE                 # License information
-├── Makefile                # Commands for testing and cleaning cache
+├── Dockerfile              # Builds reproducible container
 ├── README.md               # Project description and usage
 ├── environment.yml         # Conda environment configuration
-├── pyproject.toml          # Python project settings
-├── pytest.ini              # pytest configuration
 ├── requirements.txt        # Python package dependencies
-├── Dockerfile              # Builds reproducible container
 └── terminal_log.txt        # Logs of all terminal commands and outputs
 ```
 
@@ -113,8 +108,8 @@ MLOps-Practical-4/
 Used GenAI (ChatGPT) to:
 
 * Learn how to create and export environments using Conda and venv
-* Debug common Docker build errors and fix dependency mismatches
-* Verify Docker CMD vs ENTRYPOINT usage best practices
+* Debug Docker build errors and fix dependency mismatches
+* Resolve Git remote conflicts with rebase
 
 **Risk Control:** All commands were manually verified before execution; no destructive or system-level operations were applied.
 
@@ -124,7 +119,7 @@ Used GenAI (ChatGPT) to:
 
 This week reinforced the importance of **environment consistency** in MLOps workflows.
 By using Docker and Conda together, I ensured that experiments can be reproduced across any system without dependency issues.
-Debugging Docker builds and refining environment files also strengthened my understanding of reproducible development.
+Debugging Docker builds and refining environment files strengthened my understanding of reproducible development.
 
 Next steps:
 
